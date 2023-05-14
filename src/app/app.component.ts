@@ -10,7 +10,7 @@ import {FactWsTo} from "./fact-service/model";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'cat-facts-client';
+  title = 'facts-client';
 
   public maxLengthGroup: FormGroup;
   public currentFact = "";
@@ -22,11 +22,11 @@ export class AppComponent {
               private factService: FactService) {
     this.maxLengthGroup = this.fb.group({});
 
-    this.refreshCatFact();
+    this.refreshFact();
     this.loadSavedFacts();
   }
 
-  public refreshCatFact(){
+  public refreshFact(){
     this.isLoading = true;
     this.factService.getFact().subscribe( response => {
       this.currentFact = response.fact;

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "cat-facts-client": {
+    "facts-client": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/cat-facts-client",
+            "outputPath": "dist/facts-client",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -67,10 +67,10 @@
           },
           "configurations": {
             "production": {
-              "browserTarget": "cat-facts-client:build:production"
+              "browserTarget": "facts-client:build:production"
             },
             "development": {
-              "browserTarget": "cat-facts-client:build:development"
+              "browserTarget": "facts-client:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -78,7 +78,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "cat-facts-client:build"
+            "browserTarget": "facts-client:build"
           }
         },
         "test": {

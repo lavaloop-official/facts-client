@@ -6,7 +6,7 @@
   <ng-template #loading>
     <p>Loading...</p>
   </ng-template>
-  <form [formGroup]="maxLengthGroup" (ngSubmit)="refreshCatFact()">
+  <form [formGroup]="maxLengthGroup" (ngSubmit)="refreshFact()">
     <button type="submit" [disabled]="maxLengthGroup.invalid">Refresh</button>
     <!--<button type="button" [disabled]="isLoading" (click)="saveFact()">Save</button>-->
   </form>
