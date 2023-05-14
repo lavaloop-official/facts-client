@@ -1,5 +1,5 @@
 {
-  "name": "facts-client",
+  "name": "cat-facts-client",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",

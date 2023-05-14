@@ -1,0 +1,36 @@
+{
+  "containerDefinitions": [
+    {
+      "name": "cat-facts-client",
+      "image": "cat-facts-client",
+      "cpu": 0,
+      "portMappings": [
+        {
+          "name": "cat-facts-client-80-tcp",
+          "containerPort": 80,
+          "hostPort": 80,
+          "protocol": "tcp",
+          "appProtocol": "http"
+        }
+      ],
+      "essential": true,
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "/ecs/cat-facts-client-task-definition",
+          "awslogs-create-group": "true",
+          "awslogs-region": "us-east-1",
+          "awslogs-stream-prefix": "ecs"
+        }
+      }
+    }
+  ],
+  "executionRoleArn": "arn:aws:iam::379870995635:role/ecsTaskExecutionRole",
+  "family": "cat-facts-client-task-definition",
+  "networkMode": "awsvpc",
+  "requiresCompatibilities": [
+    "FARGATE"
+  ],
+  "cpu": "512",
+  "memory": "1024"
+}

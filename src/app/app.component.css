@@ -1,0 +1,66 @@
+.card {
+  background-color: #f0ebeb;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin-bottom: 20px;
+  min-height: 11rem;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.4;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+h3, p, label, input, button {
+  font-family: "Poppins", sans-serif;
+}
+
+form {
+  display: flex;
+  align-items: center;
+}
+
+label {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+input {
+  font-size: 16px;
+  padding: 5px 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+button {
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #FF5733;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #FF8C66;
+}
+
+button:disabled {
+  background-color: #CCCCCC;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
